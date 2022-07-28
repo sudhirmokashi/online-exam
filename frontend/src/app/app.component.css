@@ -1,0 +1,18 @@
+.divider {
+  flex: 1 1 auto;
+}
+
+.spacing {
+  margin-right: 1em;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 3em;
+  width: 10em;
+}
