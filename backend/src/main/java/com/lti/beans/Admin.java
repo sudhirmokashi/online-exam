@@ -1,12 +1,31 @@
 package com.lti.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name= "ADMIN")
 public class Admin {
 	
+	@Id
+	@Column(name="ADMIN_ID")
 	private int adminId;
+	
+	@Column(name="ADMIN_FIRST_NAME")
 	private String adminFirstName;
+	
+	@Column(name="ADMINT_LAST_NAME")
 	private String adminLastName;
+	
+	@Column(name="ADMIN_EMAIL")
 	private String adminEmail;
+	
+	@Column(name="ADMIN_PHONE")
 	private long adminPhoneNumber;
+	
+	@Column(name="ADMIN_PASSWORD")
 	private String adminPassword;
 	
 

@@ -1,9 +1,22 @@
 package com.lti.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="MARKS")
 public class Marks {
 	
+	@Id
+	@Column(name="STU_ID")
 	private int studentId;
+	
+	@Column(name="SCORE")
 	private int score;
+	
+	@Column(name="COURSE_ID")
 	private int courseId;
 	
 	public Marks(int studentId, int score, int courseId) {
