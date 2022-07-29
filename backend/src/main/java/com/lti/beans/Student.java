@@ -1,14 +1,34 @@
 package com.lti.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "STUDENT")
 public class Student {
 	
+	@Id
+	@Column(name="STU_ID")
 	private int studentId;
+	
+	@Column(name="STU_FIRST_NAME")
 	private String studentFirstName;
+	
+	@Column(name="STU_LAST_NAME")
 	private String studentLastName;
+
+	@Column(name="STU_EMAIL")
 	private String studentEmail;
+	
+	@Column(name="STU_PHONE")
 	private long studentPhoneNumber;
+	
+	@Column(name="STU_PASSWORD")
 	private String studentPassword;
+	
+	@Column(name="COURSE_ID")
 	private int courseId;
 	
 	
